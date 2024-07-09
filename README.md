@@ -1,28 +1,17 @@
-# JBI100 - team 40
+# JBI100 - New York City Airbnb Open Data Visualization
 
-Please create a virtual environment with **python version - 3.8.15**
+## Prerequisites
 
-And install necessary packages with file `requirements.txt`.
-
-Strongly recommend environment using conda.
-
-## Demo create env and install package.
+To serve this project locally, create a virtual environment with `python=3.8.15` with necessary dependencies
+as are listed in `requirements.txt`.
 
 ```shell
 # create environment 
-
 conda create -n env python=3.8.15
-
 # activate environment
-
 conda activate env
-
-```
-
-And install packages use `requirements.txt`.
-
-```shell
-
+# install packages
 pip install -r requirements.txt
-
 ```
+
+
