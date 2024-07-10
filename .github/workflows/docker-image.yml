@@ -43,5 +43,5 @@ jobs:
         platforms: linux/amd64,linux/arm64
         push: true
         tags: |
-          gitkeniwo/nyc-airbnb-visualizatoin:latest
-          ghcr.io/gitkeniwo/nyc-airbnb-visualizatoin:latest
+          gitkeniwo/nyc-airbnb-visualization:latest
+          ghcr.io/gitkeniwo/nyc-airbnb-visualization:latest
