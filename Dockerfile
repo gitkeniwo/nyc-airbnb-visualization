@@ -6,5 +6,5 @@ WORKDIR /app
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-ENTRYPOINT ["python", "run.py"]
+ENTRYPOINT ["python", "app.py"]
 CMD ["-p", "8050", "-n"]
