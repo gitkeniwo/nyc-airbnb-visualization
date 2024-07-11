@@ -14,4 +14,30 @@ conda activate env
 pip install -r requirements.txt
 ```
 
+And kick off the server with the following command:
+
+```shell
+streamlit run app.py
+```
+
+## Docker Deployment
+
+The project is also available as a Docker image. 
+
+```shell
+# pull the image
+docker pull ghcr.io/gitkeniwo/nyc-airbnb-visualization:latest
+
+# run the image
+docker run \
+  -it \
+  --rm \
+  -p 8050:8050 \
+  --name nyc-airbnb-visualization \
+  ghcr.io/gitkeniwo/nyc-airbnb-visualization:latest \
+  -p 8050 \
+  -n
+```
+
+And the application will be available at `http://localhost:8050`.
 
