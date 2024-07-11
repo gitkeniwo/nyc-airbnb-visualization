@@ -20,7 +20,8 @@ def get_word_freq(top_n: int = 20, style: dict = None) -> dcc.Graph:
     len(words)
 
     # NLTK stopwords plus our own choices   
-    nltk.download("stopwords")
+    nltk.download("stopwords", quiet=True)
+
     custom_sw = [
         'nan', 'keep',
         'room', 'building', 'apartment', 'home', 'house',
@@ -65,6 +66,8 @@ def get_word_freq(top_n: int = 20, style: dict = None) -> dcc.Graph:
         },
         xaxis_title="Word Frequency",
         # yaxis_title="Y Axis Title",
+        paper_bgcolor='rgba(0,0,0,0)',
+        plot_bgcolor='rgba(0,0,0,0)',
     )
 
     return dcc.Graph(figure=fig, style=style)
@@ -90,8 +93,9 @@ def get_cancellation_policy(style: dict = None) -> dcc.Graph:
             'text': "The Make-up of Cancellation Policy Types",
             'xanchor': 'center',
             'x': 0.5,
-
         },
+        paper_bgcolor='rgba(0,0,0,0)',
+        plot_bgcolor='rgba(0,0,0,0)',
     )
     fig.update_traces(
         textfont_size=20,

@@ -3,6 +3,7 @@ import numpy as np
 
 airbnb = pd.read_csv('airbnb_open_data.csv')
 
+
 # replace the space by the _ for all column
 airbnb.columns = [col.lower().replace(" ", "_") for col in airbnb.columns]
 

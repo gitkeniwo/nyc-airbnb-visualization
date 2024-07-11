@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
-from dash import dcc
+from dash import dcc, callback
 
 
 def get_data():
@@ -99,10 +99,12 @@ def radar_fig(neighbours: list = neighbours, method: str = 'Median') -> dcc.Grap
             )),
         showlegend=True,
         title={
-            'text': "Attributes of Properties in New York City Boroughs",
+            'text': "Property Attributes in NYC Boroughs",
             'xanchor': 'center',
             'x': 0.5,
         },
+        paper_bgcolor='rgba(0,0,0,0)',
+        plot_bgcolor='rgba(0,0,0,0)',
     )
 
     return fig
