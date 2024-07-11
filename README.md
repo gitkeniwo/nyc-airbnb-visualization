@@ -17,7 +17,10 @@ pip install -r requirements.txt
 And kick off the server with the following command:
 
 ```shell
-streamlit run app.py
+python app.py \
+  -p 8050 \
+  -H "127.0.0.1" \
+  -n
 ```
 
 ## Docker Deployment
